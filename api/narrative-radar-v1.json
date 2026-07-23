@@ -1,6 +1,6 @@
 {
   "schema_version": "narrative-radar-a2a/0.1",
-  "generated_at": "2026-07-23T23:00:00+08:00",
+  "generated_at": "2026-07-23T11:26:33.578Z",
   "as_of": "2026-07-23",
   "universe_version": "us-ai-atlas-v0.1",
   "snapshot_id": "us-ai-weekly-2026-07-23-expanded-v2",
@@ -10,12 +10,421 @@
     "source_pages": 42,
     "approved_evidence": 40,
     "actions": 19,
+    "entities": 28,
+    "candidate_urls_30d": 272,
+    "working_public_channels": 37,
     "window_sufficiency": {
-      "7d_live": false,
-      "30d_live": false,
-      "90d_live": false
+      "7d_retrospective": true,
+      "30d_retrospective": true,
+      "90d_retrospective": false
     },
-    "note": "All current evidence is backfill. Do not infer rising or cooling until at least two continuous non-backfill snapshots exist."
+    "note": "Expanded retrospective reconstruction from 42 human-reviewed public pages, selected from 272 dated 30D candidates discovered across 37 working public feeds and sitemaps. It is still a research baseline, not yet a continuously observed market series. The 90D comparison remains withheld because 180 days of observed corpus are required."
+  },
+  "latest_weekly_snapshot": {
+    "schema_version": "narrative-radar-weekly-runtime/0.1",
+    "snapshot_id": "us-ai-weekly-2026-07-23-expanded-v2",
+    "as_of": "2026-07-23",
+    "cutoff_at": "2026-07-24T00:00:00Z",
+    "pulse_mode": "retrospective_baseline",
+    "history_status": "baseline_only",
+    "evidence_bundle_id": "us-ai-expanded-2026-07-23-v1",
+    "public_api": "/api/weekly-latest.json",
+    "narratives": [
+      {
+        "narrative_id": "agents-deliver-verifiable-work",
+        "weekly_take": "扩展后的 30D 回溯样本中，当前窗有九个合格信号、六个独立 actor，前窗为三个信号、三个 actor；样本支持“升温”，但它仍是回溯基线，不代表连续观测已经建立。",
+        "source_count": 18,
+        "pulse": {
+          "7d": {
+            "category": "rising",
+            "rule_id": "RISING_v0",
+            "current": {
+              "qualified_items": 5,
+              "distinct_actors": 3,
+              "supporting_actors": 3,
+              "contrarian_actors": 1,
+              "actions": 2,
+              "contrarian_items": 1
+            },
+            "previous": {
+              "qualified_items": 2,
+              "distinct_actors": 2,
+              "supporting_actors": 2,
+              "contrarian_actors": 0,
+              "actions": 1,
+              "contrarian_items": 0
+            },
+            "basis_ids": [
+              "ev_langchain_agent_computer",
+              "ev_langchain_eval_skill",
+              "act_openai_presence",
+              "act_apollo_headless_agent",
+              "ev_openai_safety"
+            ],
+            "coverage": {
+              "sufficient": true,
+              "basis": "retrospective_corpus",
+              "required_start": "2026-07-10T00:00:00+00:00",
+              "available_start": "2026-04-24T00:00:00+00:00",
+              "complete_through": "2026-07-24T00:00:00+00:00",
+              "reasons": [],
+              "overlapping_gaps": []
+            },
+            "coverage_note": "retrospective_corpus covers both 7D comparison windows."
+          },
+          "30d": {
+            "category": "rising",
+            "rule_id": "RISING_v0",
+            "current": {
+              "qualified_items": 9,
+              "distinct_actors": 6,
+              "supporting_actors": 6,
+              "contrarian_actors": 1,
+              "actions": 3,
+              "contrarian_items": 1
+            },
+            "previous": {
+              "qualified_items": 3,
+              "distinct_actors": 3,
+              "supporting_actors": 3,
+              "contrarian_actors": 0,
+              "actions": 0,
+              "contrarian_items": 0
+            },
+            "basis_ids": [
+              "ev_openai_agent_work",
+              "ev_mews_trust",
+              "ev_langchain_agent_computer",
+              "ev_langchain_eval_skill",
+              "ev_latent_harness_engineering",
+              "act_sequoia_sable",
+              "act_openai_presence",
+              "act_apollo_headless_agent",
+              "ev_openai_safety"
+            ],
+            "coverage": {
+              "sufficient": true,
+              "basis": "retrospective_corpus",
+              "required_start": "2026-05-25T00:00:00+00:00",
+              "available_start": "2026-04-24T00:00:00+00:00",
+              "complete_through": "2026-07-24T00:00:00+00:00",
+              "reasons": [],
+              "overlapping_gaps": []
+            },
+            "coverage_note": "retrospective_corpus covers both 30D comparison windows."
+          },
+          "90d": {
+            "category": "insufficient_evidence",
+            "rule_id": "INSUFFICIENT_COVERAGE_v0",
+            "current": {
+              "qualified_items": 13,
+              "distinct_actors": 9,
+              "supporting_actors": 9,
+              "contrarian_actors": 1,
+              "actions": 3,
+              "contrarian_items": 1
+            },
+            "previous": {
+              "qualified_items": 0,
+              "distinct_actors": 0,
+              "supporting_actors": 0,
+              "contrarian_actors": 0,
+              "actions": 0,
+              "contrarian_items": 0
+            },
+            "basis_ids": [
+              "ev_sequoia_ai_ascent",
+              "ev_github_app",
+              "ev_canary_sales",
+              "ev_oracle_opera",
+              "ev_openai_agent_work",
+              "ev_mews_trust",
+              "ev_langchain_agent_computer",
+              "ev_langchain_eval_skill",
+              "ev_latent_harness_engineering",
+              "act_sequoia_sable",
+              "act_openai_presence",
+              "act_apollo_headless_agent",
+              "ev_openai_safety"
+            ],
+            "coverage": {
+              "sufficient": false,
+              "basis": "retrospective_corpus",
+              "required_start": "2026-01-25T00:00:00+00:00",
+              "available_start": "2026-04-24T00:00:00+00:00",
+              "complete_through": "2026-07-24T00:00:00+00:00",
+              "reasons": [
+                "corpus_started_too_late"
+              ],
+              "overlapping_gaps": []
+            },
+            "coverage_note": "Insufficient retrospective_corpus for two 90D windows: corpus_started_too_late."
+          }
+        }
+      },
+      {
+        "narrative_id": "enterprise-deployment-is-the-bottleneck",
+        "weekly_take": "扩展后的 30D 回溯样本中，当前窗有九个合格信号、八个独立 actor，高于前窗的四个信号、四个 actor；部署与运营层的公开动作明显增多，但仍需连续采集确认斜率。",
+        "source_count": 15,
+        "pulse": {
+          "7d": {
+            "category": "new",
+            "rule_id": "NEW_v0",
+            "current": {
+              "qualified_items": 6,
+              "distinct_actors": 5,
+              "supporting_actors": 5,
+              "contrarian_actors": 1,
+              "actions": 2,
+              "contrarian_items": 1
+            },
+            "previous": {
+              "qualified_items": 0,
+              "distinct_actors": 0,
+              "supporting_actors": 0,
+              "contrarian_actors": 0,
+              "actions": 0,
+              "contrarian_items": 0
+            },
+            "basis_ids": [
+              "ev_schneider_llmops",
+              "ev_openai_presence",
+              "ev_langchain_governed_agents",
+              "act_ntt_codex_deployment",
+              "act_menlo_cheiron",
+              "ev_openai_safety"
+            ],
+            "coverage": {
+              "sufficient": true,
+              "basis": "retrospective_corpus",
+              "required_start": "2026-07-10T00:00:00+00:00",
+              "available_start": "2026-04-24T00:00:00+00:00",
+              "complete_through": "2026-07-24T00:00:00+00:00",
+              "reasons": [],
+              "overlapping_gaps": []
+            },
+            "coverage_note": "retrospective_corpus covers both 7D comparison windows."
+          },
+          "30d": {
+            "category": "rising",
+            "rule_id": "RISING_v0",
+            "current": {
+              "qualified_items": 9,
+              "distinct_actors": 8,
+              "supporting_actors": 8,
+              "contrarian_actors": 1,
+              "actions": 4,
+              "contrarian_items": 1
+            },
+            "previous": {
+              "qualified_items": 4,
+              "distinct_actors": 4,
+              "supporting_actors": 4,
+              "contrarian_actors": 0,
+              "actions": 2,
+              "contrarian_items": 0
+            },
+            "basis_ids": [
+              "act_salesforce_help",
+              "ev_mews_trust",
+              "act_openai_hp",
+              "ev_schneider_llmops",
+              "ev_openai_presence",
+              "ev_langchain_governed_agents",
+              "act_ntt_codex_deployment",
+              "act_menlo_cheiron",
+              "ev_openai_safety"
+            ],
+            "coverage": {
+              "sufficient": true,
+              "basis": "retrospective_corpus",
+              "required_start": "2026-05-25T00:00:00+00:00",
+              "available_start": "2026-04-24T00:00:00+00:00",
+              "complete_through": "2026-07-24T00:00:00+00:00",
+              "reasons": [],
+              "overlapping_gaps": []
+            },
+            "coverage_note": "retrospective_corpus covers both 30D comparison windows."
+          },
+          "90d": {
+            "category": "insufficient_evidence",
+            "rule_id": "INSUFFICIENT_COVERAGE_v0",
+            "current": {
+              "qualified_items": 14,
+              "distinct_actors": 11,
+              "supporting_actors": 11,
+              "contrarian_actors": 1,
+              "actions": 7,
+              "contrarian_items": 1
+            },
+            "previous": {
+              "qualified_items": 0,
+              "distinct_actors": 0,
+              "supporting_actors": 0,
+              "contrarian_actors": 0,
+              "actions": 0,
+              "contrarian_items": 0
+            },
+            "basis_ids": [
+              "act_openai_deployco",
+              "act_anthropic_services",
+              "act_anthropic_dxc",
+              "ev_github_app",
+              "ev_openai_spend",
+              "act_salesforce_help",
+              "ev_mews_trust",
+              "act_openai_hp",
+              "ev_schneider_llmops",
+              "ev_openai_presence",
+              "ev_langchain_governed_agents",
+              "act_ntt_codex_deployment",
+              "act_menlo_cheiron",
+              "ev_openai_safety"
+            ],
+            "coverage": {
+              "sufficient": false,
+              "basis": "retrospective_corpus",
+              "required_start": "2026-01-25T00:00:00+00:00",
+              "available_start": "2026-04-24T00:00:00+00:00",
+              "complete_through": "2026-07-24T00:00:00+00:00",
+              "reasons": [
+                "corpus_started_too_late"
+              ],
+              "overlapping_gaps": []
+            },
+            "coverage_note": "Insufficient retrospective_corpus for two 90D windows: corpus_started_too_late."
+          }
+        }
+      },
+      {
+        "narrative_id": "ai-pricing-becomes-hybrid-and-governed",
+        "weekly_take": "扩展后的 30D 回溯样本中，当前窗有八个合格信号、四个独立 actor，高于前窗的两个信号、两个 actor；可判为升温，但它代表计价与价值衡量实验增多，不是已经形成唯一答案。",
+        "source_count": 13,
+        "pulse": {
+          "7d": {
+            "category": "rising",
+            "rule_id": "RISING_v0",
+            "current": {
+              "qualified_items": 5,
+              "distinct_actors": 2,
+              "supporting_actors": 1,
+              "contrarian_actors": 1,
+              "actions": 2,
+              "contrarian_items": 1
+            },
+            "previous": {
+              "qualified_items": 1,
+              "distinct_actors": 1,
+              "supporting_actors": 1,
+              "contrarian_actors": 0,
+              "actions": 0,
+              "contrarian_items": 0
+            },
+            "basis_ids": [
+              "ev_github_usage",
+              "ev_github_repo_metrics",
+              "ev_metr_expenditure_horizon",
+              "act_github_credit_pools",
+              "act_github_impact_dashboard"
+            ],
+            "coverage": {
+              "sufficient": true,
+              "basis": "retrospective_corpus",
+              "required_start": "2026-07-10T00:00:00+00:00",
+              "available_start": "2026-04-24T00:00:00+00:00",
+              "complete_through": "2026-07-24T00:00:00+00:00",
+              "reasons": [],
+              "overlapping_gaps": []
+            },
+            "coverage_note": "retrospective_corpus covers both 7D comparison windows."
+          },
+          "30d": {
+            "category": "rising",
+            "rule_id": "RISING_v0",
+            "current": {
+              "qualified_items": 8,
+              "distinct_actors": 4,
+              "supporting_actors": 3,
+              "contrarian_actors": 1,
+              "actions": 3,
+              "contrarian_items": 1
+            },
+            "previous": {
+              "qualified_items": 2,
+              "distinct_actors": 2,
+              "supporting_actors": 2,
+              "contrarian_actors": 0,
+              "actions": 1,
+              "contrarian_items": 0
+            },
+            "basis_ids": [
+              "ev_openai_codex_pricing",
+              "act_salesforce_help",
+              "ev_github_usage",
+              "ev_github_repo_metrics",
+              "ev_openai_useful_work_per_dollar",
+              "ev_metr_expenditure_horizon",
+              "act_github_credit_pools",
+              "act_github_impact_dashboard"
+            ],
+            "coverage": {
+              "sufficient": true,
+              "basis": "retrospective_corpus",
+              "required_start": "2026-05-25T00:00:00+00:00",
+              "available_start": "2026-04-24T00:00:00+00:00",
+              "complete_through": "2026-07-24T00:00:00+00:00",
+              "reasons": [],
+              "overlapping_gaps": []
+            },
+            "coverage_note": "retrospective_corpus covers both 30D comparison windows."
+          },
+          "90d": {
+            "category": "insufficient_evidence",
+            "rule_id": "INSUFFICIENT_COVERAGE_v0",
+            "current": {
+              "qualified_items": 10,
+              "distinct_actors": 4,
+              "supporting_actors": 3,
+              "contrarian_actors": 1,
+              "actions": 4,
+              "contrarian_items": 1
+            },
+            "previous": {
+              "qualified_items": 0,
+              "distinct_actors": 0,
+              "supporting_actors": 0,
+              "contrarian_actors": 0,
+              "actions": 0,
+              "contrarian_items": 0
+            },
+            "basis_ids": [
+              "act_github_usage_billing",
+              "ev_openai_spend",
+              "ev_openai_codex_pricing",
+              "act_salesforce_help",
+              "ev_github_usage",
+              "ev_github_repo_metrics",
+              "ev_openai_useful_work_per_dollar",
+              "ev_metr_expenditure_horizon",
+              "act_github_credit_pools",
+              "act_github_impact_dashboard"
+            ],
+            "coverage": {
+              "sufficient": false,
+              "basis": "retrospective_corpus",
+              "required_start": "2026-01-25T00:00:00+00:00",
+              "available_start": "2026-04-24T00:00:00+00:00",
+              "complete_through": "2026-07-24T00:00:00+00:00",
+              "reasons": [
+                "corpus_started_too_late"
+              ],
+              "overlapping_gaps": []
+            },
+            "coverage_note": "Insufficient retrospective_corpus for two 90D windows: corpus_started_too_late."
+          }
+        }
+      }
+    ]
   },
   "atlas": {
     "total": 22,

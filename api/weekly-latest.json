@@ -1,0 +1,1602 @@
+{
+  "schema_version": "narrative-radar-weekly-runtime/0.1",
+  "snapshot_id": "us-ai-weekly-2026-07-23-expanded-v2",
+  "as_of": "2026-07-23",
+  "generated_at": "2026-07-23T11:26:33.578Z",
+  "cutoff_at": "2026-07-24T00:00:00Z",
+  "status": "research_demo",
+  "pulse_mode": "retrospective_baseline",
+  "history_status": "baseline_only",
+  "corpus_window_start": "2026-04-24T00:00:00Z",
+  "reading_order": [
+    "agents-deliver-verifiable-work",
+    "enterprise-deployment-is-the-bottleneck",
+    "ai-pricing-becomes-hybrid-and-governed"
+  ],
+  "coverage": {
+    "reviewed_source_pages": 42,
+    "approved_evidence": 40,
+    "actions": 19,
+    "entities": 28,
+    "candidate_urls_30d": 272,
+    "working_public_channels": 37,
+    "note": "Expanded retrospective reconstruction from 42 human-reviewed public pages, selected from 272 dated 30D candidates discovered across 37 working public feeds and sitemaps. It is still a research baseline, not yet a continuously observed market series. The 90D comparison remains withheld because 180 days of observed corpus are required.",
+    "observation": {
+      "basis": "retrospective_corpus",
+      "continuous": false,
+      "started_at": "2026-04-24T00:00:00Z",
+      "complete_through": "2026-07-24T00:00:00Z",
+      "gaps": [],
+      "window_sufficiency": {
+        "7d": true,
+        "30d": true,
+        "90d": false
+      }
+    }
+  },
+  "narratives": [
+    {
+      "narrative_id": "agents-deliver-verifiable-work",
+      "sequence": "01",
+      "title": "Agent 的价值从回答问题转向交付可验证工作",
+      "english": "Agents deliver verifiable work, not just answers",
+      "one_sentence_claim": "主流语言正从“模型能不能回答”转向“Agent 能否完成任务、写回系统、让人检查结果”。",
+      "why_read_now": "这决定了 AI application 的产品边界、价值单位和可以向企业承担的责任。",
+      "weekly_take": "扩展后的 30D 回溯样本中，当前窗有九个合格信号、六个独立 actor，前窗为三个信号、三个 actor；样本支持“升温”，但它仍是回溯基线，不代表连续观测已经建立。",
+      "shift": {
+        "from": "Copilot / model demo",
+        "to": "Agentic workflow / auditable work completed"
+      },
+      "market_language": [
+        "delegated work",
+        "system of action",
+        "agent harness",
+        "trajectory monitoring",
+        "bounded autonomy"
+      ],
+      "capital_view": {
+        "buying": [
+          "拥有具体 workflow、上下文和可验收交付的 Agent",
+          "能够进入客户真实系统的垂直 AI employee / operator"
+        ],
+        "skeptical": [
+          "只在 chat UI 中显示模型能力，没有产出物、责任边界或写回闭环",
+          "把 long-horizon 直接等同于可靠自治，忽略轨迹级风险和回滚能力"
+        ]
+      },
+      "pulse": {
+        "7d": {
+          "category": "rising",
+          "rule_id": "RISING_v0",
+          "current": {
+            "qualified_items": 5,
+            "distinct_actors": 3,
+            "supporting_actors": 3,
+            "contrarian_actors": 1,
+            "actions": 2,
+            "contrarian_items": 1
+          },
+          "previous": {
+            "qualified_items": 2,
+            "distinct_actors": 2,
+            "supporting_actors": 2,
+            "contrarian_actors": 0,
+            "actions": 1,
+            "contrarian_items": 0
+          },
+          "basis_ids": [
+            "ev_langchain_agent_computer",
+            "ev_langchain_eval_skill",
+            "act_openai_presence",
+            "act_apollo_headless_agent",
+            "ev_openai_safety"
+          ],
+          "coverage": {
+            "sufficient": true,
+            "basis": "retrospective_corpus",
+            "required_start": "2026-07-10T00:00:00+00:00",
+            "available_start": "2026-04-24T00:00:00+00:00",
+            "complete_through": "2026-07-24T00:00:00+00:00",
+            "reasons": [],
+            "overlapping_gaps": []
+          },
+          "coverage_note": "retrospective_corpus covers both 7D comparison windows."
+        },
+        "30d": {
+          "category": "rising",
+          "rule_id": "RISING_v0",
+          "current": {
+            "qualified_items": 9,
+            "distinct_actors": 6,
+            "supporting_actors": 6,
+            "contrarian_actors": 1,
+            "actions": 3,
+            "contrarian_items": 1
+          },
+          "previous": {
+            "qualified_items": 3,
+            "distinct_actors": 3,
+            "supporting_actors": 3,
+            "contrarian_actors": 0,
+            "actions": 0,
+            "contrarian_items": 0
+          },
+          "basis_ids": [
+            "ev_openai_agent_work",
+            "ev_mews_trust",
+            "ev_langchain_agent_computer",
+            "ev_langchain_eval_skill",
+            "ev_latent_harness_engineering",
+            "act_sequoia_sable",
+            "act_openai_presence",
+            "act_apollo_headless_agent",
+            "ev_openai_safety"
+          ],
+          "coverage": {
+            "sufficient": true,
+            "basis": "retrospective_corpus",
+            "required_start": "2026-05-25T00:00:00+00:00",
+            "available_start": "2026-04-24T00:00:00+00:00",
+            "complete_through": "2026-07-24T00:00:00+00:00",
+            "reasons": [],
+            "overlapping_gaps": []
+          },
+          "coverage_note": "retrospective_corpus covers both 30D comparison windows."
+        },
+        "90d": {
+          "category": "insufficient_evidence",
+          "rule_id": "INSUFFICIENT_COVERAGE_v0",
+          "current": {
+            "qualified_items": 13,
+            "distinct_actors": 9,
+            "supporting_actors": 9,
+            "contrarian_actors": 1,
+            "actions": 3,
+            "contrarian_items": 1
+          },
+          "previous": {
+            "qualified_items": 0,
+            "distinct_actors": 0,
+            "supporting_actors": 0,
+            "contrarian_actors": 0,
+            "actions": 0,
+            "contrarian_items": 0
+          },
+          "basis_ids": [
+            "ev_sequoia_ai_ascent",
+            "ev_github_app",
+            "ev_canary_sales",
+            "ev_oracle_opera",
+            "ev_openai_agent_work",
+            "ev_mews_trust",
+            "ev_langchain_agent_computer",
+            "ev_langchain_eval_skill",
+            "ev_latent_harness_engineering",
+            "act_sequoia_sable",
+            "act_openai_presence",
+            "act_apollo_headless_agent",
+            "ev_openai_safety"
+          ],
+          "coverage": {
+            "sufficient": false,
+            "basis": "retrospective_corpus",
+            "required_start": "2026-01-25T00:00:00+00:00",
+            "available_start": "2026-04-24T00:00:00+00:00",
+            "complete_through": "2026-07-24T00:00:00+00:00",
+            "reasons": [
+              "corpus_started_too_late"
+            ],
+            "overlapping_gaps": []
+          },
+          "coverage_note": "Insufficient retrospective_corpus for two 90D windows: corpus_started_too_late."
+        }
+      },
+      "source_count": 18,
+      "sources": [
+        {
+          "target_type": "evidence",
+          "target_id": "ev_sequoia_ai_ascent",
+          "relation": "direct",
+          "title": "AI Ascent 2026",
+          "publisher": "Sequoia Capital",
+          "url": "https://sequoiacap.com/article/ai-ascent-2026/",
+          "published_at": "2026-05-08T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "article",
+          "statement": "Sequoia presented agents, their harnesses and enterprise diffusion as a central 2026 application-layer opportunity.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "org.sequoia"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "AI Ascent 2026"
+          },
+          "why_included": "代表性 VC 对 agents + harnesses 的公开 framing。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_a16z_exa",
+          "relation": "related",
+          "title": "Investing in Exa",
+          "publisher": "Andreessen Horowitz",
+          "url": "https://a16z.com/announcement/investing-in-exa/",
+          "published_at": "2026-05-20T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "article",
+          "statement": "a16z treats fresh, long-tail external context as infrastructure for meaningful AI workflows rather than a peripheral search feature.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.exa",
+            "org.a16z"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Investing in Exa"
+          },
+          "why_included": "说明交付工作依赖 fresh external context。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_github_app",
+          "relation": "direct",
+          "title": "Expanded technical preview availability for the GitHub Copilot app",
+          "publisher": "GitHub",
+          "url": "https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/",
+          "published_at": "2026-06-02T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "GitHub describes the human role around agents as managing output and inspecting consequential changes, not merely prompting for answers.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.github"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "A quick recap"
+          },
+          "why_included": "开发者工具将人的角色定义为管理 agent output。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_canary_sales",
+          "relation": "direct",
+          "title": "Canary Technologies launches Agentic Sales Coordinator",
+          "publisher": "Canary Technologies",
+          "url": "https://www.canarytechnologies.com/press/agentic-sales-coordinator",
+          "published_at": "2026-06-15T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "Canary launched a vertical agent intended to own an end-to-end hotel sales workflow rather than provide only recommendations.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.canary"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Agentic Sales Coordinator"
+          },
+          "why_included": "酒店科技出现从 inquiry 到 booking 的端到端垂直 Agent。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_oracle_opera",
+          "relation": "direct",
+          "title": "New AI Capabilities in Oracle OPERA Cloud Supercharge Hotel Operations",
+          "publisher": "Oracle",
+          "url": "https://www.oracle.com/news/announcement/new-ai-capabilities-in-oracle-opera-cloud-supercharge-hotel-operations-2026-06-16/",
+          "published_at": "2026-06-16T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "Oracle embedded AI into OPERA Cloud's existing hotel operating workflows instead of requiring a separate AI system.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.oracle"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "New AI Capabilities"
+          },
+          "why_included": "成熟 PMS 厂商将 AI 直接嵌入现有操作流。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_openai_agent_work",
+          "relation": "direct",
+          "title": "How agents are transforming work",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/how-agents-are-transforming-work/",
+          "published_at": "2026-06-25T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "OpenAI describes agentic AI as changing the unit of knowledge work from an interaction to a delegated task that can run across tools and time.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "How agents are transforming work"
+          },
+          "why_included": "平台方用 delegated long-horizon tasks 定义新的工作单位。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_mews_trust",
+          "relation": "direct",
+          "title": "Building Trust – How Agentic AI Earns Its Place in Hospitality",
+          "publisher": "Mews",
+          "url": "https://www.mews.com/en/blog/building-trust-how-agentic-ai-earns-its-place-in-hospitality",
+          "published_at": "2026-06-26T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "article",
+          "statement": "Mews argues that hospitality agents earn trust through native system context, evaluations and guarded action rather than an AI layer detached from the system of record.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.mews"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Why Platform Matters"
+          },
+          "why_included": "垂直行业对可信任 Agent 提出 system-of-record 与 guardrails 条件。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_manus_branch",
+          "relation": "related",
+          "title": "Introducing Branch: One Context, Many Parallel Directions",
+          "publisher": "Manus",
+          "url": "https://manus.im/blog/manus-branch",
+          "published_at": "2026-07-09T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "Manus shipped parallel agent sessions that reuse accumulated context while isolating work streams.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.manus"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Your context stays intact"
+          },
+          "why_included": "产品动作显示多 Agent 并行管理正成为用户交互模式。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_openai_presence",
+          "relation": "direct",
+          "title": "Introducing OpenAI Presence",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/introducing-openai-presence",
+          "published_at": "2026-07-22T05:30:00Z",
+          "date_precision": "minute",
+          "content_type": "company_release",
+          "statement": "OpenAI launched Presence as a production agent system built around specific jobs, approved actions, policies, evaluations, escalation and post-launch improvement.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Introducing OpenAI Presence"
+          },
+          "why_included": "生产级 Agent 被明确拆成任务、权限、评估、升级与持续改进。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_apollo_deep_agents",
+          "relation": "direct",
+          "title": "How Apollo Uses Deep Agents and LangSmith for GTM AI",
+          "publisher": "LangChain",
+          "url": "https://www.langchain.com/blog/how-apollo-rebuilt-its-ai-assistant-on-deep-agents-to-power-the-full-gtm-loop",
+          "published_at": "2026-07-21T23:48:02Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "LangChain reports that Apollo rebuilt its assistant around goal-based execution, tracing and evaluations, then distributed the same headless agent through API, MCP and CLI surfaces.",
+          "reporting_basis": "company_reported",
+          "company_reported": true,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.apollo",
+            "company.langchain"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "From a UI feature to the intelligence layer"
+          },
+          "why_included": "Agent 产品开始进入真实的跨系统、长链条工作。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_langchain_agent_computer",
+          "relation": "direct",
+          "title": "Agents need their own computer. Here's how to give them one safely.",
+          "publisher": "LangChain",
+          "url": "https://www.langchain.com/blog/agents-need-their-own-computer",
+          "published_at": "2026-07-21T23:48:02Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "LangChain argues that execution-capable agents require isolated, disposable and persistent computer environments rather than access to tools alone.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.langchain"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Why agents need their own computer"
+          },
+          "why_included": "Agent 获得可控的计算机环境来执行而不只是回答。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_langchain_eval_skill",
+          "relation": "direct",
+          "title": "Eval Engineering Skill: Build Evals From Repo Context and Traces",
+          "publisher": "LangChain",
+          "url": "https://www.langchain.com/blog/towards-automating-eval-engineering",
+          "published_at": "2026-07-22T17:18:03Z",
+          "date_precision": "minute",
+          "content_type": "company_release",
+          "statement": "LangChain launched an Eval Engineering Skill that uses repository context and agent traces to propose executable evaluations for human approval.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.langchain"
+          ],
+          "locator": {
+            "kind": "paragraph",
+            "value": "launch paragraph"
+          },
+          "why_included": "Agent 的可用性开始通过可复用评估方法进行工程化。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_latent_harness_engineering",
+          "relation": "direct",
+          "title": "5 Trends That Defined AI Engineering at World’s Fair 2026",
+          "publisher": "Latent Space",
+          "url": "https://www.latent.space/p/aiewf26trends",
+          "published_at": "2026-07-14T23:21:21Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "Latent Space observed that AI engineering discourse has shifted from agent demos toward harnesses, context, permissions, evaluation, persistent state and reliable production systems.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "media.latent-space"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "The focus shifts from agents to the systems around them"
+          },
+          "why_included": "工程讨论从模型选择转向 harness、工具与运行时。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_sequoia_sable",
+          "relation": "direct",
+          "title": "Partnering with Sable: Closing the Diffusion Gap",
+          "publisher": "Sequoia Capital",
+          "url": "https://sequoiacap.com/article/partnering-with-sable-closing-the-diffusion-gap/",
+          "published_at": "2026-07-16T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "article",
+          "statement": "Sequoia announced that it led Sable's seed round and co-led its Series A.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "org.sequoia"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Closing the Diffusion Gap"
+          },
+          "why_included": "一线 VC 实际投资 AI employee 与企业 diffusion gap。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_openai_presence",
+          "relation": "direct",
+          "title": "Introducing OpenAI Presence",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/introducing-openai-presence",
+          "published_at": "2026-07-22T05:30:00Z",
+          "date_precision": "minute",
+          "content_type": "company_release",
+          "statement": "OpenAI launched Presence for production voice and chat agents.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Introducing OpenAI Presence"
+          },
+          "why_included": "平台方把 governed agent 作为独立生产系统发布。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_apollo_headless_agent",
+          "relation": "direct",
+          "title": "How Apollo Uses Deep Agents and LangSmith for GTM AI",
+          "publisher": "LangChain",
+          "url": "https://www.langchain.com/blog/how-apollo-rebuilt-its-ai-assistant-on-deep-agents-to-power-the-full-gtm-loop",
+          "published_at": "2026-07-21T23:48:02Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "LangChain reports that Apollo exposed its AI assistant through API, MCP and CLI channels.",
+          "reporting_basis": "company_reported",
+          "company_reported": true,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.apollo"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "From a UI feature to the intelligence layer"
+          },
+          "why_included": "企业软件公司把 agent 直接嵌入业务执行链。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_sequoia_bunkerhill",
+          "relation": "adjacent",
+          "title": "Partnering with Bunkerhill Health: AI Agents that Improve Patient Outcomes",
+          "publisher": "Sequoia Capital",
+          "url": "https://sequoiacap.com/article/partnering-with-bunkerhill-health-ai-agents-that-improve-patient-outcomes/",
+          "published_at": "2026-07-16T17:00:13Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "Sequoia announced a follow-on investment in Bunkerhill Health.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "org.sequoia"
+          ],
+          "locator": {
+            "kind": "paragraph",
+            "value": "Carebricks platform"
+          },
+          "why_included": "资本继续支持进入高责任垂直工作流的 AI 公司。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_openai_safety",
+          "relation": "contrarian",
+          "title": "Safety and alignment in an era of long-horizon models",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/safety-alignment-long-horizon-models/",
+          "published_at": "2026-07-20T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "article",
+          "statement": "OpenAI reported that persistence created failures missed by fixed pre-deployment evaluations, requiring trajectory monitoring, intervention and rollback.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "From considering single actions to considering whole trajectories"
+          },
+          "why_included": "直接反证 long-horizon 能力不等于可以无边界自治。"
+        }
+      ]
+    },
+    {
+      "narrative_id": "enterprise-deployment-is-the-bottleneck",
+      "sequence": "02",
+      "title": "Enterprise AI 的瓶颈从模型访问转向部署与运营",
+      "english": "Enterprise AI moves from model access to deployment operations",
+      "one_sentence_claim": "FDE、partner network、governance、integration 和 change management 正在从服务附件变成 Enterprise AI 产品的核心交付层。",
+      "why_read_now": "大客户不是缺一个更聪明的 Demo，而是缺把 AI 安全地放进数据、权限、流程和组织中的交付机制。",
+      "weekly_take": "扩展后的 30D 回溯样本中，当前窗有九个合格信号、八个独立 actor，高于前窗的四个信号、四个 actor；部署与运营层的公开动作明显增多，但仍需连续采集确认斜率。",
+      "shift": {
+        "from": "Pilot / API access",
+        "to": "FDE + integration + governance + change management"
+      },
+      "market_language": [
+        "FDE",
+        "production deployment",
+        "partner ecosystem",
+        "governance",
+        "change management"
+      ],
+      "capital_view": {
+        "buying": [
+          "能把模型落到 mission-critical workflow 的交付能力",
+          "可重复的行业模板、评估、权限和部署方法"
+        ],
+        "skeptical": [
+          "试点数量很多但生产部署和客户背书很少",
+          "用大量定制项目掩盖产品无法标准化"
+        ]
+      },
+      "pulse": {
+        "7d": {
+          "category": "new",
+          "rule_id": "NEW_v0",
+          "current": {
+            "qualified_items": 6,
+            "distinct_actors": 5,
+            "supporting_actors": 5,
+            "contrarian_actors": 1,
+            "actions": 2,
+            "contrarian_items": 1
+          },
+          "previous": {
+            "qualified_items": 0,
+            "distinct_actors": 0,
+            "supporting_actors": 0,
+            "contrarian_actors": 0,
+            "actions": 0,
+            "contrarian_items": 0
+          },
+          "basis_ids": [
+            "ev_schneider_llmops",
+            "ev_openai_presence",
+            "ev_langchain_governed_agents",
+            "act_ntt_codex_deployment",
+            "act_menlo_cheiron",
+            "ev_openai_safety"
+          ],
+          "coverage": {
+            "sufficient": true,
+            "basis": "retrospective_corpus",
+            "required_start": "2026-07-10T00:00:00+00:00",
+            "available_start": "2026-04-24T00:00:00+00:00",
+            "complete_through": "2026-07-24T00:00:00+00:00",
+            "reasons": [],
+            "overlapping_gaps": []
+          },
+          "coverage_note": "retrospective_corpus covers both 7D comparison windows."
+        },
+        "30d": {
+          "category": "rising",
+          "rule_id": "RISING_v0",
+          "current": {
+            "qualified_items": 9,
+            "distinct_actors": 8,
+            "supporting_actors": 8,
+            "contrarian_actors": 1,
+            "actions": 4,
+            "contrarian_items": 1
+          },
+          "previous": {
+            "qualified_items": 4,
+            "distinct_actors": 4,
+            "supporting_actors": 4,
+            "contrarian_actors": 0,
+            "actions": 2,
+            "contrarian_items": 0
+          },
+          "basis_ids": [
+            "act_salesforce_help",
+            "ev_mews_trust",
+            "act_openai_hp",
+            "ev_schneider_llmops",
+            "ev_openai_presence",
+            "ev_langchain_governed_agents",
+            "act_ntt_codex_deployment",
+            "act_menlo_cheiron",
+            "ev_openai_safety"
+          ],
+          "coverage": {
+            "sufficient": true,
+            "basis": "retrospective_corpus",
+            "required_start": "2026-05-25T00:00:00+00:00",
+            "available_start": "2026-04-24T00:00:00+00:00",
+            "complete_through": "2026-07-24T00:00:00+00:00",
+            "reasons": [],
+            "overlapping_gaps": []
+          },
+          "coverage_note": "retrospective_corpus covers both 30D comparison windows."
+        },
+        "90d": {
+          "category": "insufficient_evidence",
+          "rule_id": "INSUFFICIENT_COVERAGE_v0",
+          "current": {
+            "qualified_items": 14,
+            "distinct_actors": 11,
+            "supporting_actors": 11,
+            "contrarian_actors": 1,
+            "actions": 7,
+            "contrarian_items": 1
+          },
+          "previous": {
+            "qualified_items": 0,
+            "distinct_actors": 0,
+            "supporting_actors": 0,
+            "contrarian_actors": 0,
+            "actions": 0,
+            "contrarian_items": 0
+          },
+          "basis_ids": [
+            "act_openai_deployco",
+            "act_anthropic_services",
+            "act_anthropic_dxc",
+            "ev_github_app",
+            "ev_openai_spend",
+            "act_salesforce_help",
+            "ev_mews_trust",
+            "act_openai_hp",
+            "ev_schneider_llmops",
+            "ev_openai_presence",
+            "ev_langchain_governed_agents",
+            "act_ntt_codex_deployment",
+            "act_menlo_cheiron",
+            "ev_openai_safety"
+          ],
+          "coverage": {
+            "sufficient": false,
+            "basis": "retrospective_corpus",
+            "required_start": "2026-01-25T00:00:00+00:00",
+            "available_start": "2026-04-24T00:00:00+00:00",
+            "complete_through": "2026-07-24T00:00:00+00:00",
+            "reasons": [
+              "corpus_started_too_late"
+            ],
+            "overlapping_gaps": []
+          },
+          "coverage_note": "Insufficient retrospective_corpus for two 90D windows: corpus_started_too_late."
+        }
+      },
+      "source_count": 15,
+      "sources": [
+        {
+          "target_type": "action",
+          "target_id": "act_openai_deployco",
+          "relation": "direct",
+          "title": "OpenAI launches the OpenAI Deployment Company",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+          "published_at": "2026-05-11T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "OpenAI launched the OpenAI Deployment Company.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Why deployment matters"
+          },
+          "why_included": "OpenAI 直接创建 FDE 交付公司。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_anthropic_services",
+          "relation": "direct",
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "publisher": "Anthropic",
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "published_at": "2026-06-03T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "Anthropic launched the Services Track and Partner Hub for its partner network.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.anthropic"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "About the Services Track"
+          },
+          "why_included": "Anthropic 用生产部署和客户背书定义 partner tier。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_anthropic_dxc",
+          "relation": "direct",
+          "title": "DXC will integrate Claude into systems regulated industries rely on",
+          "publisher": "Anthropic",
+          "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+          "published_at": "2026-06-11T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "Anthropic and DXC announced a multi-year global alliance with an FDE program.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.anthropic",
+            "company.dxc"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Building a team of Claude-certified engineers"
+          },
+          "why_included": "规模化 FDE 进入受监管行业的具体动作。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_github_app",
+          "relation": "direct",
+          "title": "Expanded technical preview availability for the GitHub Copilot app",
+          "publisher": "GitHub",
+          "url": "https://github.blog/changelog/2026-06-02-expanded-technical-preview-availability-for-the-github-copilot-app/",
+          "published_at": "2026-06-02T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "GitHub describes the human role around agents as managing output and inspecting consequential changes, not merely prompting for answers.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.github"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "A quick recap"
+          },
+          "why_included": "终端产品也在补人类审查和监督层。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_openai_spend",
+          "relation": "direct",
+          "title": "New usage analytics and updated spend controls for enterprises",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+          "published_at": "2026-06-18T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "OpenAI added enterprise usage analytics and spend controls, treating AI consumption as a governable operating cost.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "New usage analytics and updated spend controls"
+          },
+          "why_included": "成本与用量治理成为生产部署条件。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_salesforce_help",
+          "relation": "direct",
+          "title": "Salesforce announces prepackaged Agentforce Help Agent",
+          "publisher": "Salesforce",
+          "url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+          "published_at": "2026-06-25T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "Salesforce announced Agentforce Help Agent with pay-per-resolution pricing.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.salesforce"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Salesforce Perspective"
+          },
+          "why_included": "预包装 agent 把用例、平台和商业模式绑在一起。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_mews_trust",
+          "relation": "direct",
+          "title": "Building Trust – How Agentic AI Earns Its Place in Hospitality",
+          "publisher": "Mews",
+          "url": "https://www.mews.com/en/blog/building-trust-how-agentic-ai-earns-its-place-in-hospitality",
+          "published_at": "2026-06-26T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "article",
+          "statement": "Mews argues that hospitality agents earn trust through native system context, evaluations and guarded action rather than an AI layer detached from the system of record.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.mews"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Why Platform Matters"
+          },
+          "why_included": "垂直行业说明部署需要语义上下文和 guardrails。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_openai_hp",
+          "relation": "direct",
+          "title": "HP Inc. launches Frontier strategic partnership with OpenAI",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/hp-frontier-partnership/",
+          "published_at": "2026-06-28T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "HP and OpenAI announced a strategic Frontier partnership moving beyond pilot use.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.hp",
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "From pilot wins to enterprise deployment"
+          },
+          "why_included": "从 pilot 扩到企业运营层的具体 partnership。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_schneider_llmops",
+          "relation": "direct",
+          "title": "How Schneider Electric Built Their LLMOps Foundations With LangSmith",
+          "publisher": "LangChain",
+          "url": "https://www.langchain.com/blog/how-schneider-electric-built-their-llmops-foundations-at-enterprise-scale-with-langsmith",
+          "published_at": "2026-07-23T04:36:55Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "LangChain reports that Schneider Electric built a shared LLMOps foundation around tracing, evaluation and governed deployment rather than treating each AI application as an isolated pilot.",
+          "reporting_basis": "third_party_reported",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.langchain",
+            "company.schneider-electric"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "How Schneider Electric Built Their LLMOps Foundations With LangSmith"
+          },
+          "why_included": "大型企业把 tracing、eval 和 governed deployment 建成共享底座。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_openai_presence",
+          "relation": "direct",
+          "title": "Introducing OpenAI Presence",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/introducing-openai-presence",
+          "published_at": "2026-07-22T05:30:00Z",
+          "date_precision": "minute",
+          "content_type": "company_release",
+          "statement": "OpenAI launched Presence as a production agent system built around specific jobs, approved actions, policies, evaluations, escalation and post-launch improvement.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Introducing OpenAI Presence"
+          },
+          "why_included": "生产部署被定义为权限、评估、升级和持续改进系统。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_langchain_governed_agents",
+          "relation": "direct",
+          "title": "Building Governed Agents: A Framework for Cost, Control, and Compliance",
+          "publisher": "LangChain",
+          "url": "https://www.langchain.com/blog/building-governed-agents-a-framework-for-cost-control-and-compliance",
+          "published_at": "2026-07-21T18:11:17Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "LangChain describes runtime governance across model calls, tool calls and agent hops as production infrastructure for controlling cost, continuity, privacy and compliance.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.langchain"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Why governance matters"
+          },
+          "why_included": "governance 与运行控制正在进入 Agent 产品栈。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_ntt_codex_deployment",
+          "relation": "direct",
+          "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/ntt-data",
+          "published_at": "2026-07-22T00:00:00Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "OpenAI reports that NTT DATA expanded Codex to about 9,000 employees and reduced one five-engineer, three-day incident-analysis process to 30 minutes.",
+          "reporting_basis": "company_reported",
+          "company_reported": true,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.ntt-data",
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "From three days of incident analysis to 30 minutes"
+          },
+          "why_included": "全球服务商把 Codex 部署到工程团队并配套 adoption program。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_ntt_codex_deployment",
+          "relation": "direct",
+          "title": "NTT DATA Group cuts incident analysis to 30 minutes with Codex",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/ntt-data",
+          "published_at": "2026-07-22T00:00:00Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "OpenAI reports that NTT DATA expanded Codex across technical and nontechnical roles.",
+          "reporting_basis": "company_reported",
+          "company_reported": true,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.ntt-data"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "From three days of incident analysis to 30 minutes"
+          },
+          "why_included": "显示模型能力需要组织级导入和运营机制。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_menlo_cheiron",
+          "relation": "direct",
+          "title": "A Unified OS for Drug Development: Our Investment in Cheiron",
+          "publisher": "Menlo Ventures",
+          "url": "https://menlovc.com/perspective/a-unified-os-for-drug-development-our-investment-in-cheiron/",
+          "published_at": "2026-07-22T21:00:00Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "Menlo Ventures announced an investment in Cheiron.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "org.menlo"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "A Unified OS for Drug Development"
+          },
+          "why_included": "资本支持面向受监管工作流的垂直 AI 部署。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_openai_safety",
+          "relation": "contrarian",
+          "title": "Safety and alignment in an era of long-horizon models",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/safety-alignment-long-horizon-models/",
+          "published_at": "2026-07-20T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "article",
+          "statement": "OpenAI reported that persistence created failures missed by fixed pre-deployment evaluations, requiring trajectory monitoring, intervention and rollback.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "From considering single actions to considering whole trajectories"
+          },
+          "why_included": "部署层必须保留监控、暂停和回滚。"
+        }
+      ]
+    },
+    {
+      "narrative_id": "ai-pricing-becomes-hybrid-and-governed",
+      "sequence": "03",
+      "title": "AI pricing 正从 seat-only 分化为 usage、outcome 与预算控制",
+      "english": "AI pricing becomes hybrid, usage-aware and governed",
+      "one_sentence_claim": "企业 AI 并没有收敛到单一计价模式，而是出现 seat + included credits + overage、token usage 和 pay-per-outcome 的多种组合。",
+      "why_read_now": "当 AI 从偶尔问答变成持续工作，价格、用量可见性、预算责任和交付结果必须一起被设计。",
+      "weekly_take": "扩展后的 30D 回溯样本中，当前窗有八个合格信号、四个独立 actor，高于前窗的两个信号、两个 actor；可判为升温，但它代表计价与价值衡量实验增多，不是已经形成唯一答案。",
+      "shift": {
+        "from": "Fixed seat only",
+        "to": "Seat + credits + usage + outcome + controls"
+      },
+      "market_language": [
+        "AI credits",
+        "token-based pricing",
+        "pay-per-resolution",
+        "included usage",
+        "spend controls"
+      ],
+      "capital_view": {
+        "buying": [
+          "价格单位与客户可见的工作量或结果挂钩",
+          "有用量可见性、预算上限和毛利管理的 hybrid model"
+        ],
+        "skeptical": [
+          "只把 token 换成新名词，客户看不到消耗与业务价值的关系",
+          "纯 outcome pricing 却无法界定责任、基准和可控成本"
+        ]
+      },
+      "pulse": {
+        "7d": {
+          "category": "rising",
+          "rule_id": "RISING_v0",
+          "current": {
+            "qualified_items": 5,
+            "distinct_actors": 2,
+            "supporting_actors": 1,
+            "contrarian_actors": 1,
+            "actions": 2,
+            "contrarian_items": 1
+          },
+          "previous": {
+            "qualified_items": 1,
+            "distinct_actors": 1,
+            "supporting_actors": 1,
+            "contrarian_actors": 0,
+            "actions": 0,
+            "contrarian_items": 0
+          },
+          "basis_ids": [
+            "ev_github_usage",
+            "ev_github_repo_metrics",
+            "ev_metr_expenditure_horizon",
+            "act_github_credit_pools",
+            "act_github_impact_dashboard"
+          ],
+          "coverage": {
+            "sufficient": true,
+            "basis": "retrospective_corpus",
+            "required_start": "2026-07-10T00:00:00+00:00",
+            "available_start": "2026-04-24T00:00:00+00:00",
+            "complete_through": "2026-07-24T00:00:00+00:00",
+            "reasons": [],
+            "overlapping_gaps": []
+          },
+          "coverage_note": "retrospective_corpus covers both 7D comparison windows."
+        },
+        "30d": {
+          "category": "rising",
+          "rule_id": "RISING_v0",
+          "current": {
+            "qualified_items": 8,
+            "distinct_actors": 4,
+            "supporting_actors": 3,
+            "contrarian_actors": 1,
+            "actions": 3,
+            "contrarian_items": 1
+          },
+          "previous": {
+            "qualified_items": 2,
+            "distinct_actors": 2,
+            "supporting_actors": 2,
+            "contrarian_actors": 0,
+            "actions": 1,
+            "contrarian_items": 0
+          },
+          "basis_ids": [
+            "ev_openai_codex_pricing",
+            "act_salesforce_help",
+            "ev_github_usage",
+            "ev_github_repo_metrics",
+            "ev_openai_useful_work_per_dollar",
+            "ev_metr_expenditure_horizon",
+            "act_github_credit_pools",
+            "act_github_impact_dashboard"
+          ],
+          "coverage": {
+            "sufficient": true,
+            "basis": "retrospective_corpus",
+            "required_start": "2026-05-25T00:00:00+00:00",
+            "available_start": "2026-04-24T00:00:00+00:00",
+            "complete_through": "2026-07-24T00:00:00+00:00",
+            "reasons": [],
+            "overlapping_gaps": []
+          },
+          "coverage_note": "retrospective_corpus covers both 30D comparison windows."
+        },
+        "90d": {
+          "category": "insufficient_evidence",
+          "rule_id": "INSUFFICIENT_COVERAGE_v0",
+          "current": {
+            "qualified_items": 10,
+            "distinct_actors": 4,
+            "supporting_actors": 3,
+            "contrarian_actors": 1,
+            "actions": 4,
+            "contrarian_items": 1
+          },
+          "previous": {
+            "qualified_items": 0,
+            "distinct_actors": 0,
+            "supporting_actors": 0,
+            "contrarian_actors": 0,
+            "actions": 0,
+            "contrarian_items": 0
+          },
+          "basis_ids": [
+            "act_github_usage_billing",
+            "ev_openai_spend",
+            "ev_openai_codex_pricing",
+            "act_salesforce_help",
+            "ev_github_usage",
+            "ev_github_repo_metrics",
+            "ev_openai_useful_work_per_dollar",
+            "ev_metr_expenditure_horizon",
+            "act_github_credit_pools",
+            "act_github_impact_dashboard"
+          ],
+          "coverage": {
+            "sufficient": false,
+            "basis": "retrospective_corpus",
+            "required_start": "2026-01-25T00:00:00+00:00",
+            "available_start": "2026-04-24T00:00:00+00:00",
+            "complete_through": "2026-07-24T00:00:00+00:00",
+            "reasons": [
+              "corpus_started_too_late"
+            ],
+            "overlapping_gaps": []
+          },
+          "coverage_note": "Insufficient retrospective_corpus for two 90D windows: corpus_started_too_late."
+        }
+      },
+      "source_count": 13,
+      "sources": [
+        {
+          "target_type": "action",
+          "target_id": "act_github_usage_billing",
+          "relation": "direct",
+          "title": "Updates to GitHub Copilot billing and plans",
+          "publisher": "GitHub",
+          "url": "https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/",
+          "published_at": "2026-06-01T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "GitHub activated usage-based billing for Copilot plans.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.github"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Usage-based billing is active for all Copilot plans"
+          },
+          "why_included": "从按 seat 转向 included credits + overage 的实际产品动作。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_openai_spend",
+          "relation": "direct",
+          "title": "New usage analytics and updated spend controls for enterprises",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/chatgpt-enterprise-spend-controls/",
+          "published_at": "2026-06-18T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "OpenAI added enterprise usage analytics and spend controls, treating AI consumption as a governable operating cost.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "New usage analytics and updated spend controls"
+          },
+          "why_included": "补足企业用量与预算治理。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_openai_codex_pricing",
+          "relation": "direct",
+          "title": "Codex now offers pay-as-you-go pricing for teams",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/codex-flexible-pricing-for-teams/",
+          "published_at": "2026-06-24T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "OpenAI tied Codex-only team usage to token consumption and positioned the model as a flexible pilot-to-scale path.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Codex now offers pay-as-you-go pricing for teams"
+          },
+          "why_included": "计价直接与 token consumption 连接。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_salesforce_help",
+          "relation": "direct",
+          "title": "Salesforce announces prepackaged Agentforce Help Agent",
+          "publisher": "Salesforce",
+          "url": "https://www.salesforce.com/news/stories/agentforce-help-agent-announcement/",
+          "published_at": "2026-06-25T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "Salesforce announced Agentforce Help Agent with pay-per-resolution pricing.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.salesforce"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Salesforce Perspective"
+          },
+          "why_included": "代表 pay-per-resolution 的 outcome 方向。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_github_usage",
+          "relation": "direct",
+          "title": "Copilot users can now see AI credits used per billing cycle",
+          "publisher": "GitHub",
+          "url": "https://github.blog/changelog/2026-07-20-copilot-users-can-now-see-ai-credits-used-per-billing-cycle/",
+          "published_at": "2026-07-20T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "GitHub made actual Copilot credit consumption visible by billing cycle, reinforcing usage visibility as part of the product experience.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.github"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Now the page reflects your actual usage"
+          },
+          "why_included": "实时用量可见性成为计价产品的一部分。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_github_credit_pools",
+          "relation": "direct",
+          "title": "AI credit pools for cost centers in the billing UI",
+          "publisher": "GitHub",
+          "url": "https://github.blog/changelog/2026-07-20-ai-credit-pools-for-cost-centers-in-the-billing-ui/",
+          "published_at": "2026-07-20T18:24:14Z",
+          "date_precision": "minute",
+          "content_type": "company_release",
+          "statement": "GitHub added cost-center AI credit pools that separate included usage from metered overage budgets and let enterprises block or permit additional spend.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.github"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "AI credit pools for cost centers"
+          },
+          "why_included": "企业开始用共享 credits pool 管理多种 AI 能力的消耗。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_github_impact_dashboard",
+          "relation": "direct",
+          "title": "New Copilot usage metrics impact dashboard",
+          "publisher": "GitHub",
+          "url": "https://github.blog/changelog/2026-07-22-new-copilot-usage-metrics-impact-dashboard/",
+          "published_at": "2026-07-22T16:21:47Z",
+          "date_precision": "minute",
+          "content_type": "company_release",
+          "statement": "GitHub released an enterprise dashboard that measures AI adoption depth using workflow and pull-request outcomes rather than active-seat counts alone.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.github"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "New Copilot usage metrics impact dashboard"
+          },
+          "why_included": "价值衡量从活跃 seat 延伸到 workflow 和 pull-request outcome。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_github_repo_metrics",
+          "relation": "direct",
+          "title": "Repository-level GitHub Copilot usage metrics generally available",
+          "publisher": "GitHub",
+          "url": "https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available/",
+          "published_at": "2026-07-17T22:05:18Z",
+          "date_precision": "minute",
+          "content_type": "company_release",
+          "statement": "GitHub added repository-level daily reporting for Copilot coding-agent and code-review pull-request activity.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.github"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "Repository-level GitHub Copilot usage metrics generally available"
+          },
+          "why_included": "组织开始把 AI 采用与交付指标在 repo 粒度连接。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_openai_useful_work_per_dollar",
+          "relation": "direct",
+          "title": "How to manage AI investments in the agentic era",
+          "publisher": "OpenAI",
+          "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+          "published_at": "2026-07-14T10:00:00Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "OpenAI argues that enterprise AI should be evaluated through useful work per dollar—tasks completed, time saved, decisions improved and workflows ready to scale—rather than token price alone.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "company.openai"
+          ],
+          "locator": {
+            "kind": "paragraph",
+            "value": "useful work per dollar"
+          },
+          "why_included": "供应方用 useful work per dollar 重写价格性能语言。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_metr_expenditure_horizon",
+          "relation": "contrarian",
+          "title": "Expenditure Horizon: Measuring Optimization Ability, with an Application to NanoGPT",
+          "publisher": "METR",
+          "url": "https://metr.org/blog/2026-07-21-expenditure-horizon/",
+          "published_at": "2026-07-21T07:00:00Z",
+          "date_precision": "minute",
+          "content_type": "article",
+          "statement": "METR proposes comparing agents with humans at equal budgets, including token, experiment-compute and labor costs, instead of treating benchmark completion as sufficient evidence of economic value.",
+          "reporting_basis": "speaker_direct",
+          "company_reported": false,
+          "first_party_source": false,
+          "actor_entity_ids": [
+            "org.metr"
+          ],
+          "locator": {
+            "kind": "paragraph",
+            "value": "expenditure horizon definition"
+          },
+          "why_included": "研究提醒投入与长任务能力的关系并非简单线性。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_github_credit_pools",
+          "relation": "direct",
+          "title": "AI credit pools for cost centers in the billing UI",
+          "publisher": "GitHub",
+          "url": "https://github.blog/changelog/2026-07-20-ai-credit-pools-for-cost-centers-in-the-billing-ui/",
+          "published_at": "2026-07-20T18:24:14Z",
+          "date_precision": "minute",
+          "content_type": "company_release",
+          "statement": "GitHub added AI credit pools for enterprise cost centers.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.github"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "AI credit pools for cost centers"
+          },
+          "why_included": "credit pool 从计价概念落为可管理的企业产品动作。"
+        },
+        {
+          "target_type": "action",
+          "target_id": "act_github_impact_dashboard",
+          "relation": "direct",
+          "title": "New Copilot usage metrics impact dashboard",
+          "publisher": "GitHub",
+          "url": "https://github.blog/changelog/2026-07-22-new-copilot-usage-metrics-impact-dashboard/",
+          "published_at": "2026-07-22T16:21:47Z",
+          "date_precision": "minute",
+          "content_type": "company_release",
+          "statement": "GitHub released a Copilot usage metrics impact dashboard.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.github"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "New Copilot usage metrics impact dashboard"
+          },
+          "why_included": "价值衡量被产品化为组织级 dashboard。"
+        },
+        {
+          "target_type": "evidence",
+          "target_id": "ev_oracle_opera",
+          "relation": "adjacent",
+          "title": "New AI Capabilities in Oracle OPERA Cloud Supercharge Hotel Operations",
+          "publisher": "Oracle",
+          "url": "https://www.oracle.com/news/announcement/new-ai-capabilities-in-oracle-opera-cloud-supercharge-hotel-operations-2026-06-16/",
+          "published_at": "2026-06-16T00:00:00Z",
+          "date_precision": "day",
+          "content_type": "company_release",
+          "statement": "Oracle embedded AI into OPERA Cloud's existing hotel operating workflows instead of requiring a separate AI system.",
+          "reporting_basis": "first_party_release",
+          "company_reported": false,
+          "first_party_source": true,
+          "actor_entity_ids": [
+            "company.oracle"
+          ],
+          "locator": {
+            "kind": "heading",
+            "value": "New AI Capabilities"
+          },
+          "why_included": "提醒 embedded AI 可能通过平台价值包装，不一定单独计量。"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "evidence_bundle_id": "us-ai-expanded-2026-07-23-v1",
+    "snapshot_sha256": "15e988ce55252236e733712618d07dcaf2e8f01e571b3d9631a5ad8f7ca15548",
+    "evidence_bundle_sha256": "42dfb7d58fb7eb4a594ea78482107176fa2bd9c2410d43f8a0817ddeacbcf651"
+  },
+  "qa": {
+    "status": "pass",
+    "facts_traceable": true,
+    "actions_sourced": true,
+    "marks_isolated": true,
+    "lens_excluded_from_pulse": true,
+    "backfill_excluded_in_live_mode": true,
+    "numeric_heat_score_present": false
+  },
+  "product_boundaries": {
+    "global_weight_affected_by_lens": false,
+    "global_weight_affected_by_following": false,
+    "retrospective_signal_presented_as_live_pulse": false,
+    "investment_advice": false,
+    "login_wall_bypass": false
+  }
+}
